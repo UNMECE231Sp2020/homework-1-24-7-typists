@@ -15,7 +15,7 @@ void hdlr1(Complex (*fn_hdlr) (Complex, Complex), Complex input_one, Complex inp
 	printf("%lf %lf", fn_hdlr(input_one, input_two).real, fn_hdlr(input_one, input_two).imag);
 }
 
-void hdlr2(Double (*fn_hdlr) (Complex), Complex input_three) {
+void hdlr2(double (*fn_hdlr) (Complex), Complex input_three) {
 	printf("%lf", fn_hdlr(input_three));
 }
 
