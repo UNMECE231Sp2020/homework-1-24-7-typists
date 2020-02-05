@@ -5,7 +5,7 @@
 int main() {
 	Complex a = {3, 4};
 	Complex b = {5, 12};
-	Complex (*complex_fn[4])(Complex, Complex) = {add, sub, mult, div};
+	Complex (*complex_fn[4])(Complex, Complex) = {complex_add, complex_sub, complex_mult, complex_div};
 	double (*mag_phase_fn[2])(Complex) = {magnitude, phase};
 	int i;
 	for (i=0; i<4; i++){

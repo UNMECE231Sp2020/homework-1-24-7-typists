@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <math.h>
-#include "my_complex.h"
+//#include "my_complex.h"
 
 double magnitude(Complex c) {
 	return sqrt((c.real*c.real) + (c.imag*c.imag));
