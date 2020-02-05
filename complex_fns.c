@@ -46,6 +46,7 @@ Complex complex_div(Complex c1, Complex c2) {
 	//"Check for divison by zero. Print error and return 0 + j0"
 	if (denom == 0){
 		printf("Division by Zero!");
+		Complex c;
 		c.real == 0;
 		c.imag == 0;
 	       	return c;

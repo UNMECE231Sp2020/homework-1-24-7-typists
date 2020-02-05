@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "my_complex.h"
+#include "complex_fns.c"
 
 int main() {
 	Complex a = {3, 4};
