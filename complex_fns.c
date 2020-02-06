@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <math.h>
-//#include "my_complex.h"
+#include "my_complex.h"
 
 double magnitude(Complex c) {
 	return sqrt((c.real*c.real) + (c.imag*c.imag));
@@ -55,5 +55,13 @@ Complex complex_div(Complex c1, Complex c2) {
 	c.real /= denom;
 	c.imag /= denom;
 	return c;
+}
+
+void hdlr1(Complex (*fn_hdlr) (Complex, Complex), Complex input_one, Complex input_two) {
+	printf("%lf     %lf\n", fn_hdlr(input_one, input_two).real, fn_hdlr(input_one, input_two).imag);
+}
+
+void hdlr2(double (*fn_hdlr) (Complex), Complex input_three) {
+	printf("%lf    \n", fn_hdlr(input_three));
 }
 

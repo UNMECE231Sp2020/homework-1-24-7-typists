@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "my_complex.h"
-#include "complex_fns.c"
+//#include "complex_fns.c"
 
 
 int main() {
